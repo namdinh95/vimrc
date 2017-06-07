@@ -1,3 +1,7 @@
+" Pathogen stuff
+call pathogen#infect()
+call pathogen#helptags()
+
 color dracula
 syntax on
 filetype plugin indent on
@@ -10,7 +14,6 @@ set hlsearch
 set autochdir 
 " Search for visually selected text
 vnoremap // y/<C-R>"<CR> 
-execute pathogen#infect()
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>

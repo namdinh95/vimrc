@@ -8,17 +8,13 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +32 bin/www
-badd +22 app.js
-badd +0 routes/app.js
-badd +1 views/index.hbs
-badd +0 assets/app/app.component.html
-badd +1 views/node.hbs
-badd +32 ~/Dropbox/git-projects/yui-bot/index.js
+badd +14 ~/Dropbox/git-projects/angular_udemy/seed-project/package.json
+badd +22 ~/Dropbox/git-projects/angular_udemy/seed-project/bin/www
+badd +7 ~/Dropbox/git-projects/angular_udemy/seed-project/views/index.hbs
 argglobal
 silent! argdel *
 $argadd package.json
-edit views/index.hbs
+edit ~/Dropbox/git-projects/angular_udemy/seed-project/package.json
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -34,56 +30,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 6 - ((5 * winheight(0) + 16) / 33)
+let s:l = 14 - ((13 * winheight(0) + 17) / 35)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-6
-normal! 0129|
-tabedit views/node.hbs
-set splitbelow splitright
-set nosplitbelow
-set nosplitright
-wincmd t
-set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 7 - ((6 * winheight(0) + 16) / 33)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-7
-normal! 07|
-tabedit routes/app.js
-set splitbelow splitright
-set nosplitbelow
-set nosplitright
-wincmd t
-set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 11 - ((10 * winheight(0) + 16) / 33)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-11
-normal! 033|
+14
+normal! 036|
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf

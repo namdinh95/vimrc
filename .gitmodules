@@ -1,0 +1,48 @@
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/dracula-theme"]
+	path = bundle/dracula-theme
+	url = https://github.com/dracula/vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/numbers"]
+	path = bundle/numbers
+	url = https://github.com/myusuf3/numbers.vim.git
+[submodule "bundle/pgsql.vim"]
+	path = bundle/pgsql.vim
+	url = https://github.com/exu/pgsql.vim
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "bundle/tcomment_vim"]
+	path = bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/sirver/ultisnips
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline
+[submodule "bundle/vim-closetag"]
+	path = bundle/vim-closetag
+	url = https://github.com/alvan/vim-closetag.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "bundle/vim-sensible"]
+	path = bundle/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
