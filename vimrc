@@ -17,6 +17,7 @@ vnoremap // y/<C-R>"<CR>
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
 
 " Syntastic Settings 
 nnoremap <C-w>e :SyntasticReset<CR>
