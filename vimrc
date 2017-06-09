@@ -11,9 +11,14 @@ set colorcolumn=80
 imap ` <Esc>
 set hlsearch
 "Force current directory to current file
-set autochdir 
+"set autochdir 
 " Search for visually selected text
 vnoremap // y/<C-R>"<CR> 
+
+" Ctrl-P
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
+let g:ctrlp_working_path_mode='ra'
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
