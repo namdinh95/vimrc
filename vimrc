@@ -21,7 +21,7 @@ let g:ctrlp_cmd='CtrlP'
 let g:ctrlp_working_path_mode='ra'
 
 " NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <silent> <C-n> :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 let NERDTreeQuitOnOpen=1
 
 " Syntastic Settings 
