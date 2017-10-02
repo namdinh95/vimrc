@@ -10,6 +10,8 @@ set number
 set colorcolumn=80
 imap ` <Esc>
 set hlsearch
+set hidden
+set autowrite
 "Force current directory to current file
 "set autochdir 
 " Search for visually selected text
@@ -17,11 +19,12 @@ vnoremap // y/<C-R>"<CR>
 
 " Ctrl-P
 let g:ctrlp_map='<c-p>'
-let g:ctrlp_cmd='CtrlP'
+let g:ctrlp_cmd='CtrlPMixed'
 let g:ctrlp_working_path_mode='ra'
 
 " NERDTree
-map <silent> <C-n> :NERDTreeToggle<CR> :NERDTreeMirror<CR>
+" map <silent> <C-n> :NERDTreeToggle<CR> :NERDTreeMirror<CR>
+map <silent> <C-n> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 
 " Syntastic Settings 
@@ -34,6 +37,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
+let g:syntastic_java_javac_delete_output=0
 
 " YouCompleteMe Options
 let g:ycm_key_list_select_completion = ['<Tab>', '<Down>']
@@ -56,10 +60,13 @@ let g:airline_theme='dracula'
 let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"'}
 
 " HTML Closetags rule
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.xml"
 
 " Make PostgreSQL color syntax default
 let g:sql_type_default = 'pgsql'
+
+" JSX syntax 
+let g:jsx_ext_required = 0
 
 " Autosave and autoload sessions
 function! MakeSession()
